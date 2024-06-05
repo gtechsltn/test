@@ -22,7 +22,7 @@ public void UserServiceShouldActivateUser()
 
   var userService = new UserService(userStoreFake);
 
-  //Actual
+  //Act
   userService.Activate(user);
 
   //Assert
@@ -73,7 +73,7 @@ public void ContractShouldCombineNameAndAddress()
     }
   };
 
-  //Actual
+  //Act
   var contract = user.GetContract();
 
   //Assert
@@ -88,7 +88,7 @@ public void UserServiceShouldActivateUser()
 {
   //Arrange
 
-  //Actual
+  //Act
 
   //Assert
 
