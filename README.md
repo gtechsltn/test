@@ -55,6 +55,32 @@ public void ShouldDecreaseBalance_WhenValidWithdrawIsMade()
 }
 ```
 
+## Mistery Guest
+```
+[Test]
+public void ContractShouldCombineNameAndAddress()
+{
+  //Arrange
+  var user = new User
+  {
+    FirstName = "John",
+    LastName = "Smith",
+    Address = new Address
+    {
+      Stree = "123 Main St",
+      City = "Springfield",
+      ZipCode = "12345"
+    }
+  };
+
+  //Actual
+  var contract = user.GetContract();
+
+  //Assert
+  contract.Should().Be("John Smith, 123 Main St, Springfield, 12345");
+}
+```
+
 ## AAA
 ```
 [Test]
