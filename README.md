@@ -11,7 +11,7 @@ git remote add origin https://github.com/gtechsltn/test.git
 git push -u origin master
 ```
 
-## Unit Test 01
+## Fragile tests
 ```
 [Test]
 public void UserServiceShouldActivateUser()
@@ -31,21 +31,31 @@ public void UserServiceShouldActivateUser()
 }
 ```
 
-## Unit Test 02
+## Eager tests
 ```
 [Test]
-public void UserServiceShouldActivateUser()
+public void ActiveAccountShouldBeInitialized_WhenConstructed()
 {
-  //Arrange
-
-  //Actual
-
-  //Assert
-
+  ...
+}
+[Test]
+public void ShouldIncreaseBalance_WhenDepositIsMade()
+{
+  ...
+}
+[Test]
+public void ShouldReturnError_WhenWithdrawAmountExceedsBalance()
+{
+  ...
+}
+[Test]
+public void ShouldDecreaseBalance_WhenValidWithdrawIsMade()
+{
+  ...
 }
 ```
 
-## Unit Test 03
+## AAA
 ```
 [Test]
 public void UserServiceShouldActivateUser()
